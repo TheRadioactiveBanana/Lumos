@@ -1,0 +1,29 @@
+[plugins]
+shadow = "com.github.johnrengelman.shadow:8.1.0"
+
+[versions]
+mindustryVersion = "v146"
+
+[libraries]
+arc = { module = "com.github.Anuken.Arc:arc-core", version.ref = "mindustryVersion" }
+mindustry = { module = "com.github.Anuken.Mindustry:core", version.ref = "mindustryVersion" }
+server = { module = "com.github.Anuken.Mindustry:server", version.ref = "mindustryVersion" }
+database-core = "org.mongodb:mongodb-driver-core:4.10.1"
+database-driver = "org.mongodb:mongodb-driver-sync:4.10.1"
+database-bson = "org.mongodb:bson:4.10.1"
+discord = "org.javacord:javacord:3.7.0"
+json = "com.googlecode.json-simple:json-simple:1.1.1"
+mixins = "org.spongepowered:mixin:0.6.6-SNAPSHOT"
+terminal = "org.jline:jline:3.23.0"
+fastjson = "com.alibaba:fastjson:2.0.32"
+lombok = "org.projectlombok:lombok:1.18.26" #unnecessary
+ipaddress = "com.github.seancfoley:ipaddress:5.4.0" #unnecessary?
+modlib = "com.github.Redstonneur1256.Mindustry-ModLib:Mod:1.4.5" #absolutely unnecessary
+unifiedmetrics = "dev.cubxity.plugins:unifiedmetrics-api:0.3.6"
+guava = "com.google.guava:guava:32.1.2-jre" #deprecated  - i will use argon2 instead
+argon = "de.mkammerer:argon2-jvm:2.11"
+atomic = "com.github.o7-Fire.Atomic-Library:Atomic:-SNAPSHOT"
+commonslang = 'org.apache.commons:commons-lang3:3.13.0' #unused for now
+time = "net.time4j:time4j-base:5.9.1"
+hardwareinfo = "com.github.oshi:oshi-core:6.4.6"
+donations = "com.github.Yeet-Hosting:JavaPayokSDK:3cb87fc" #does not work as a dependancy wtf
