@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+}
+
+group 'element'
+version '1.0'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    google()
+
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+    maven { url 'https://repo.spongepowered.org/repository/maven-public/' }
+    maven { url 'https://jitpack.io' }
+    maven { url "https://plugins.gradle.org/m2/" }
+}
+
+ext {
+    mindustryVersion = "v146"
+}
+
+dependencies {
+    compileOnly(libs.arc)
+    compileOnly(libs.mindustry)
+    compileOnly(libs.server)
+}
+
+configurations.configureEach {
+    resolutionStrategy.eachDependency {details ->
+        if(details.requested.group == 'com.github.Anuken.Arc') details.useVersion("$mindustryVersion")
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+    options.encoding = 'UTF-8'
+}
+
+jar {
+    exclude 'META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA'
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    archiveFileName = "ElementPlugin.jar"
+
+    from configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+}
