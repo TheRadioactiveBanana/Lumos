@@ -15,6 +15,50 @@ public class LumosItems {
             hardness = 2;
             cost = 0.45f;
         }};
+        fullerine = new Item("fullerine", Color.valueOf("afbdab")) {{
+            hardness = 2;
+            cost = 0.45f;
+        }};
+                uraninite = new Item("uraninite", Color.valueOf("afbdab")) {{
+            hardness = 2;
+            cost = 0.45f;
+        }};
+                quartz = new Item("quartz", Color.valueOf("afbdab")) {{
+            hardness = 2;
+            cost = 0.45f;
+        }};
+                sulphur = new Item("sulphur", Color.valueOf("afbdab")) {{
+            hardness = 2;
+            cost = 0.45f;
+        }};
+                uranium = new Item("uranium", Color.valueOf("afbdab")) {{
+            hardness = 2;
+            cost = 0.45f;
+        }};
+                thermite = new Item("thermite", Color.valueOf("afbdab")) {{
+            hardness = 2;
+            cost = 0.45f;
+        }};
+                sapphire = new Item("sapphire", Color.valueOf("afbdab")) {{
+            hardness = 2;
+            cost = 0.45f;
+        }};
+                cogunite = new Item("cogunite", Color.valueOf("afbdab")) {{
+            hardness = 2;
+            cost = 0.45f;
+        }};
+                lumosCrystal = new Item("lumosCrystal", Color.valueOf("afbdab")) {{
+            hardness = 2;
+            cost = 0.45f;
+        }};
+                plutonium = new Item("plutonium", Color.valueOf("afbdab")) {{
+            hardness = 2;
+            cost = 0.45f;
+        }};
+                silicaGlass = new Item("silicaGlass", Color.valueOf("afbdab")) {{
+            hardness = 2;
+            cost = 0.45f;
+        }};
     }
         
 }
