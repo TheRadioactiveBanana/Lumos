@@ -14,5 +14,6 @@ public class LumosItems {
          hardness = 2;
             cost = .45f;
         }};
+    }
         
 }
