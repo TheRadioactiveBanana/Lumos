@@ -11,7 +11,7 @@ public class LumosItems {
             hardness = 1;
             cost = 0.40f;
         }};
-        manganese = new Item("manganese", Color.valueOf("7575c8")) {{
+        manganese = new Item("manganese", Color.valueOf("afbdab")) {{
             hardness = 2;
             cost = 0.45f;
         }};
